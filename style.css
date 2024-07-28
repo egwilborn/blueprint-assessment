@@ -263,7 +263,7 @@ input {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 60vw;
+  width: 70vw;
 }
 h3 {
   font-size: 40px;
@@ -309,7 +309,7 @@ h3 {
   height: 230px;
 }
 .bio-paragraph {
-  width: 70%;
+  width: 90%;
   font-size: 11px;
   margin-top: 0;
 }
