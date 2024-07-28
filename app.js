@@ -34,7 +34,6 @@ form.addEventListener("submit", (e) => {
 //----------- Handles Hamburger Menu Toggle ---------------//
 hamburgerIcon.addEventListener("click", function () {
   hamburgerMenu.classList.toggle("visible");
-  console.log(hamburgerMenu);
 });
 
 function handleToggleMenu() {
