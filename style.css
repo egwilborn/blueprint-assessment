@@ -198,6 +198,7 @@ input {
 /* ~ donate ~ */
 #donate-money {
   margin: 50px 0px 50px 0px;
+  padding-bottom: 40px;
   width: 80vw;
   background: radial-gradient(
     circle 300px at top right,
