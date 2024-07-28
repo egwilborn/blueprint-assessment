@@ -2,8 +2,11 @@
 body {
   padding: 0;
   margin: 0;
+  width: 100vw;
 }
-
+.hamburger-menu {
+  opacity: 0;
+}
 .teko-text {
   font-family: "Teko", sans-serif;
   font-optical-sizing: auto;
@@ -36,11 +39,15 @@ body {
   opacity: 70%;
   transition: 0.3s;
 }
+
 #nav-buttons {
   display: flex;
   flex-direction: row;
   gap: 30px;
   align-items: center;
+}
+#hamburger-icon {
+  display: none;
 }
 #social {
   display: flex;
@@ -229,16 +236,7 @@ input {
   justify-content: flex-start;
   align-items: center;
 }
-#buttons-col1 > button {
-  color: white;
-  height: 50px;
-  width: 240px;
-  background-color: rgb(20, 51, 81);
-  border: solid rgb(98, 173, 219);
-  border-width: 3px;
-  font-size: 35px;
-  font-weight: 400;
-}
+#buttons-col1 > button,
 #buttons-col2 > button {
   color: white;
   height: 50px;
@@ -249,6 +247,7 @@ input {
   font-size: 35px;
   font-weight: 400;
 }
+
 #buttons-col2 > button:hover,
 #buttons-col1 > button:hover {
   background-color: rgb(255, 180, 61);
@@ -352,4 +351,161 @@ footer {
 }
 .policy-link > a:hover {
   opacity: 70%;
+}
+
+/* Responsive CSS */
+/* ~Tablet~ */
+@media screen and (max-width: 768px) {
+  #nav-buttons {
+    display: none;
+  }
+  #blue-div-box {
+    gap: 8px;
+  }
+  #form-logo,
+  #stay-in-touch {
+    padding-top: 15px;
+  }
+  .donate-bio {
+    top: 500px;
+  }
+  #donate-money {
+    margin: 30px 0 30px 0;
+    height: 260px;
+  }
+  #buttons-col1 > button,
+  #buttons-col2 > button {
+    height: 40px;
+    width: 200px;
+    font-size: 25px;
+  }
+  #caption {
+    width: 220px;
+  }
+  .bio {
+    width: 80vw;
+  }
+  .bio-paragraph-photo > img,
+  .bio-photo-caption > img {
+    height: 210px;
+  }
+  .bio-paragraph {
+    width: 85%;
+    font-size: 10px;
+    margin-top: 0;
+  }
+  #hamburger-icon {
+    display: inline;
+  }
+  #hamburger-icon > img {
+    height: 50px;
+    margin-right: 100px;
+  }
+  #hamburger-icon > img:hover {
+    background-color: rgb(27, 67, 105);
+  }
+  .hamburger-menu {
+    display: box;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    height: 360px;
+    width: 250px;
+    z-index: 3;
+    background-color: rgb(27, 67, 105);
+    color: white;
+  }
+  .hamburger-menu > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .visible {
+    opacity: 100%;
+  }
+  ul {
+    margin-right: 40px;
+  }
+  ul > li {
+    font-family: "Teko", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  ul > li:hover {
+    background-color: rgb(0, 147, 193);
+  }
+  li > a {
+    text-decoration: none;
+  }
+  li > a:visited {
+    color: white;
+  }
+}
+/* ~Mobile~ */
+@media screen and (max-width: 579px) {
+  #buttons-col1 > button,
+  #buttons-col2 > button {
+    height: 40px;
+    width: 100px;
+    font-size: 25px;
+  }
+  #stay-in-touch {
+    font-size: 18px;
+  }
+  .policy {
+    width: 200px;
+    padding: 0 20px 20px 0;
+  }
+  #policy-text {
+    width: 200px;
+    border: 1px solid;
+    border-color: white;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+  }
+  #caption {
+    display: none;
+  }
+  .bio {
+    width: 80vw;
+    justify-content: center;
+  }
+  .bio-paragraph-photo > img,
+  .bio-photo-caption > img {
+    height: 210px;
+  }
+  .bio-paragraph {
+    width: 100%;
+    font-size: 10px;
+    margin-top: 0;
+  }
+  .bio-paragraph-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
+    gap: 20px;
+  }
+  .nav-logo {
+    height: 50px;
+    padding: 20px;
+  }
+  #form-logo {
+    height: 50px;
+  }
+  input {
+    height: 2vh;
+  }
+  ::placeholder {
+    font-size: 10px;
+  }
 }

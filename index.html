@@ -22,7 +22,40 @@
           alt="Samantha hall democrat for senate logo"
         />
       </a>
-      <div class="hamburger-menu"></div>
+      <div id="hamburger-icon">
+        <img src="./source-files/burger-menu-svgrepo-com.svg" alt="" />
+      </div>
+      <div class="hamburger-menu">
+        <ul>
+          <li><a>Volunteer</a></li>
+          <li>Donate</li>
+          <li>Follow Us!</li>
+          <li>
+            <img
+              class="social-icons"
+              src="./source-files/Social-icons/Facebook.png"
+              alt="facebook logo"
+            />
+            <a href="https://www.facebook.com"> Facebook </a>
+          </li>
+          <li>
+            <img
+              class="social-icons"
+              src="./source-files/Social-icons/Twitter.png"
+              alt="twitter logo"
+            />
+            <a href="https://www.twitter.com"> Twitter </a>
+          </li>
+          <li>
+            <img
+              class="social-icons"
+              src="./source-files/Social-icons/IG.png"
+              alt="instagram logo"
+            />
+            <a href="https://www.instagram.com"> Instagram </a>
+          </li>
+        </ul>
+      </div>
       <div id="nav-buttons">
         <button id="volunteer" class="action teko-text">Volunteer</button>
         <button id="donate" class="action teko-text">Donate</button>
@@ -70,10 +103,23 @@
           STAY IN TOUCH<br />WITH SAMANTHA
         </div>
         <form name="Blueprint-Assessment" id="form" class="contact-form">
-          <input name="Email" type="email" placeholder="Email" />
+          <input required name="Email" type="email" placeholder="Email" />
           <div id="phone-zip">
-            <input name="Phone" type="text" placeholder="Phone" />
-            <input name="Zip" type="text" placeholder="Zip" />
+            <input
+              required
+              name="Phone"
+              type="text"
+              placeholder="Phone"
+              minlength="10"
+            />
+            <input
+              required
+              name="Zip"
+              type="text"
+              placeholder="Zip"
+              minlength="5"
+              maxlength="5"
+            />
           </div>
           <button
             class="teko-text signup"
